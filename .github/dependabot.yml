@@ -7,6 +7,9 @@ updates:
     open-pull-requests-limit: 20
     commit-message:
       prefix: ":arrow_up:"
+    ignore:
+      - dependency-name: tailwindcss
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
